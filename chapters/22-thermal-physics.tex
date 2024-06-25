@@ -218,6 +218,28 @@ specific heat capacity: $c = \frac{4.2\times12}{1.00 \times 4.09 \times 10^{-2}}
 	\end{tabular} 
 \end{center}
 
+\sol Firstly consider heat required to heat silver from $293 \mathrm{~K}$ to $1340 \mathrm{~K}$:
+$$
+Q_{\text {silver }}=m_{\text {silver }} \times c_{\text {silver }} \times\left(T_{\text {final }}-T_{\text {initial }}\right)
+$$
+
+
+Heat released by gold cooling from $T_{\text {initial gold }}$ to $1340 \mathrm{~K}$:
+$$
+Q_{\text {gold }}=m_{\text {gold }} \times c_{\text {gold }} \times\left(T_{\text {initial gold }}-1340\right)
+$$
+
+Since $m_{\text {gold }}=0.95 m$,
+$$
+Q_{\text {gold }}=0.95 \mathrm{~m} \times 129 \times\left(T_{\text {initial gold }}-1340\right)
+$$
+
+
+Equating heat transfer for equilibrium:
+$$
+0.95 m \times 129 \times\left(T_{\text {initial gold }}-1340\right)=0.05 m \times 235 \times(1340-293) \quad \Rightarrow \quad  T_{\text {initial gold }} \approx 1438.35 \mathrm{~K}
+$$
+
 
 
 \subsection{internal energy}
@@ -502,6 +524,50 @@ $C \to A$: $-5980 = Q_{CA} + (+4000) \RA Q_{CA} = -9980 \text{ J}$
 \question{Show that when $n$ mol of gas is heated at a fixed volume, thermal energy required to raise the temperature by 1.0 K is $nR$.}
 
 \question{Two identical balloons $A$ and $B$ hold the same amount of gas at the same initial temperature. They are given the same amount of heat. Suppose volume of $A$ is fixed, while $B$ is allowed to expand, compare the final temperatures of the gases in the two balloons.}
+
+
+\question{The variation of its pressure $p$ with its volume $V$ is shown on the graph.} 
+
+\begin{figure}[ht]
+	\centering
+	\vspace*{-5pt}
+	\begin{tikzpicture}[scale=1]
+	\draw[<->] (3,8) node[above]{$p$/kPa} -- (3,2) -- (8,2) node[right] {$V/10^{-3}$ m$^3$};
+	\draw[help lines, gray] (3,2) grid (8,8);
+	\foreach \x in {100,150,200,250,300,350,400} \node[left] at (2.9,\x*2/100) {$\x$};
+	\foreach \x in {3,4,5,6,7,8} \node[below] at (\x,1.9) {$\x$};
+	\draw[very thick, blue, ->] (4,2.4) node[left]{$A$} -- (4,4.8);
+	\draw[very thick, blue] (4,4.8) -- (4,7.2) node[left]{$B$};
+	\draw [very thick, blue, domain=4:7.75] plot (\x, {39.68/\x-2.72}) node[right=-0.1]{$C$};
+	\draw[very thick, blue, ->] (7.75,2.4) -- (5.7,2.4);
+	\draw[very thick, blue] (5.7,2.4) -- (4,2.4);
+	\draw[very thick, blue, ->] (6,3.89) -- (6.05,3.84);
+	\end{tikzpicture}
+	\vspace*{-10pt}
+\end{figure}
+
+Giving that the temperature of the gas at $\mathrm{A}$ is $290 \mathrm{~K}$. The temperature at $\mathrm{B}$ is $870 \mathrm{~K}$. The pressure at $\mathrm{A}$ and is $120 \mathrm{~kPa}$. The volume at $\mathrm{C}$ is approximately $7.75\times10^{-3}\mathrm{~m^{-3}}$. Complete the table.
+
+\begin{center}
+		\begin{tabular}{|C{2.5cm}|C{2.5cm}|C{2.5cm}|C{2.5cm}|}
+			\hline
+			change &  $W$/J & $Q$/J & $\Delta U$/J \\ \hline
+			$A \to B$ &  &  & \\ \hline
+			$B \to C$ & -800 &  &  \\ \hline
+			$C \to A$ &  &  &  \\ \hline
+		\end{tabular}
+	
+	\vspace*{-0.1\baselineskip}
+\end{center}
+
+
+
+
+
+
+
+
+
 
 
 \subsection{temperature}

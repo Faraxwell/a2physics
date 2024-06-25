@@ -461,11 +461,55 @@ $E_p =-\frac{GMm}{r}$ is a more \emph{general} formula for gravitational potenti
 
 for earth, escape velocity $u_\tmin = \sqrt{\frac{2\times6.67\times10^{-11}\times6.0\times10^{24}}{6.4\times10^6}} \approx 1.12\times10^4\mps$ \eoe
 
-\question{A planet of uniform density distribution is of radius $R$ and mass $M$. A rock falls from a height of $3R$ above the surface of the planet. Assume the planet has no atmosphere, show that the speed of the rock when it hits the ground is $v=\sqrt{\frac{3GM}{4R}}$.}
+%\question{A planet of uniform density distribution is of radius $R$ and mass $M$. A rock falls from a height of $3R$ above the surface of the planet. Assume the planet has no atmosphere, show that the speed of the rock when it hits the ground is $v=\sqrt{\frac{3GM}{4R}}$.} I think there is a typo for $v=\sqrt{\frac{3GM}{4R}}$, it should be $v=\sqrt{\frac{3GM}{2R}}$%
+
+\question{A planet of uniform density distribution is of radius $R$ and mass $M$. A rock falls from a height of $3R$ above the surface of the planet. Assume the planet has no atmosphere, show that the speed of the rock when it hits the ground is $v=\sqrt{\frac{3GM}{2R}}$.}
+
+\sol By energy conservation
+$$
+-\frac{G M m}{4 R}+0=-\frac{G M m}{R}+\frac{1}{2} m v^2 \q \Rightarrow \q v=\sqrt{\frac{3 G M}{2 R}}
+$$
+
+
 
 \question{A space probe is travelling around a planet of mass $M$ in a circular orbit of radius $r$. (a) Show that the total mechanical energy (sum of kinetic energy and gravitational energy) of the space probe is $E_\text{total} = -\frac{2GMm}{r}$. (b) If the space probe is subject to small resistive forces, state the change to its orbital radius and its orbiting speed.}
 
+
+\sol (a) Orbit speed is given by and hence kinetic energy is
+$$
+v^2=\frac{G M}{r} \q \Rightarrow \q K E=\frac{1}{2} m\left(\frac{G M}{r}\right)=\frac{G M m}{2 r}
+$$
+
+so total mechanical energy is
+$$
+E_{\text {total }}=K E+P E=\frac{G M m}{2 r}-\frac{G M m}{r}=-\frac{G M m}{2 r}
+$$
+
+(b) The energy decreases due to resistive forces, therefore according to the expression of $E$, the radius will decrease. And since radius decreases, the orbiting speed will increase.
+
 \question{A \emph{black hole} is a region of spacetime where gravitation is so strong that even light cannot escape from it. For a star of mass $M$ to collapse and form a black hole, it has to be compressed below a certain radius. (a) Show that this radius is given by $R_S = \frac{2GM}{c^2}$, known as the \emph{Schwarzschild radius}\footnote{When you deal with very strong gravitational fields, Newton's law of gravitation breaks down and effects of Einstein's \emph{general theory of relativity} come into play. The radius of a \emph{Newtonian} black hole being equal to the radius of a Schwarzschild black hole is a mere coincidence.}. (b) Show that the Schwarzschild radius for the sun is about 3 km.}
+
+\sol (a) The Schwarzschild radius $R_S$ is the radius below which the escape velocity from the gravitational pull of an object exceeds the speed of light, $c$. The escape velocity $v_e$ is given by:
+$$
+v_e=\sqrt{\frac{2 G M}{r}}
+$$
+
+Setting $v_e=c$ :
+$$
+c=\sqrt{\frac{2 G M}{R_S}}
+$$
+
+Squaring both sides:
+$$
+c^2=\frac{2 G M}{R_S}
+$$
+
+Solving for $R_S$ :
+$$
+R_S=\frac{2 G M}{c^2}
+$$
+
+(b) Substitute the value, we can show that the radius is about 3 km.
 
 \newpage
 

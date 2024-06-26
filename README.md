@@ -1,4 +1,4 @@
-## Contributor's word
+## collaborator's word
 
 I am a student who graduated from high school two years ago and I am now a university student. I have benefited greatly from these notes in the past and I would like to write some solutions of end-chapter-questions for this lecture notes. Sometimes I will add some new questions besides the original-exisiting ones. I will not change anything about the content except typos.
 
